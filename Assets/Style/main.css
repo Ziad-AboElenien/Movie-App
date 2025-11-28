@@ -1,0 +1,395 @@
+
+:root {
+    /* Main background gradient */
+    --bg-gradient-main:  linear-gradient(to right, #630d39, #5e143b, #591a3d, #531e3e, #4e223f);
+
+    --bg-body: #f4f4f8;
+    --text-color: #111;
+    --text-light: #666;
+    --accent: #ff3355;
+    --accent-hover: #ff4b6b;
+    --input-bg: #ffffff;
+    --input-border: #ccc;
+    --input-text: #111;
+    --input-placeholder: #888;
+    --shadow: rgba(0,0,0,0.1);
+    --nav-bg: #ffffffc9;
+    --side-bg: #ffffffee;
+    --mood-bg: #ffffff;
+    --mood-icon: #111;
+    --text-main: #111;
+    --text-muted: white;
+    --border-light: rgba(255,255,255,0.25);
+    --border-color: #ddd;
+    --accent-2: #ff889d;
+    --accent-3: #ffbac7;
+    --glow-accent: 0 0 12px rgba(255, 51, 85, 0.65);
+    --glow-light: 0 0 18px rgba(255, 255, 255, 0.45);
+}
+
+.night {
+    --accent-2: #ff6d8b;
+    --accent-3: #ff97a9;
+    --glow-accent: 0 0 15px rgba(255, 90, 120, 0.5);
+    --glow-light: 0 0 20px rgba(255,255,255,0.25);
+    --border-light: rgba(255,255,255,0.15);
+    --bg-gradient-main:  linear-gradient(to right, #1d0d12, #270e13, #320e12, #3b0d0d, #440e03);
+    --bg-body: #0d0d14;
+    --text-color: #f2f2f2;
+    --text-light: #bbb;
+    --border-color: #333;
+    --accent: #ff4668;
+    --accent-hover: #ff5d7a;
+    --input-bg: #1a1a24;
+    --input-border: #444;
+    --input-text: #fff;
+    --input-placeholder: #aaa;
+    --shadow: rgba(0,0,0,0.5);
+    --nav-bg: #10101aee;
+    --side-bg: #14141eee;
+    --mood-bg: #1a1a24;
+    --mood-icon: #fff;
+}
+
+
+body {
+    background: var(--bg-gradient-main) !important;
+    color: var(--text-main) !important;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+nav {
+    background: var(--nav-bg);
+    backdrop-filter: blur(8px);
+    border-right: 1px solid var(--border-color);
+    transition: 0.3s;
+}
+
+.nav-side {
+    background: var(--side-bg);
+    backdrop-filter: blur(8px);
+    border-right: 1px solid var(--border-color);
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.nav-side .links span:hover,
+.nav-side a:hover {
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.nav-side .links span,
+.nav-side a ,
+.nav-side p.copy ,
+.nav-menu-box ,
+.nav-social 
+{
+    color: var(--text-color) !important;
+    transition: 0.2s;
+}
+
+.nav-side .links span:hover,
+.nav-side a:hover {
+    color: var(--accent);
+}
+
+.search-input {
+    background: var(--input-bg);
+    border-color: var(--input-border);
+    color: var(--input-text);
+    transition: 0.3s;
+}
+
+.search-input::placeholder {
+    color: var(--input-placeholder);
+}
+
+.search-input {
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+.search-input:focus {
+    box-shadow: 0 0 12px var(--accent);
+    border-color: var(--accent);
+}
+
+
+
+
+.mood-box {
+    background: var(--mood-bg);
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--shadow);
+    transition: 0.3s;
+}
+
+.mood-box svg {
+    stroke: var(--mood-icon);
+    transition: 0.3s;
+}
+
+
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-muted) !important;
+    font-weight: 600 !important;
+}
+
+p {
+    color: var(--text-muted) !important;
+}
+
+
+
+.w-fit {
+    width: fit-content;
+}
+
+.w-250 {
+    width: 250px;
+}
+
+.my-container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.undedline
+{
+    color: #f86767;
+}
+a.undedline::before {
+    content: 'Created By : ';
+    color: rgba(228, 149, 149, 0.97);
+}
+
+nav {
+    transition: all .7s;
+}
+
+nav.opened {
+    transform: translateX(250px);
+}
+
+.mood-box
+{
+    width: 50px;
+    height: 50px;
+}
+
+.nav-side {
+    transform: translateX(-250px);
+    transition: all .7s;
+}
+
+.nav-side.opened {
+    transform: translateX(0);
+}
+
+.nav-side ul.link {
+    transform: translateY(100%);
+    transition: all .8s;
+}
+
+.nav-side.opened ul.link {
+    transform: translateY(0);
+}
+
+.nav-side ul.link li {
+    transform: translateY(400%);
+    transition: all .9s;
+}
+
+.nav-side.opened ul.link li {
+    transform: translateY(0);
+}
+
+
+*::placeholder {
+    padding-left: 15px;
+}
+
+.layer {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.img-trans {
+    transition: all .5s;
+}
+
+.inner:hover .img-trans {
+    transform: scale(1.2) skew(-6deg);
+}
+
+.layer h3 {
+    transform: translateY(-120%);
+    transition: all .7s;
+}
+
+.layer p.movie-desc {
+    transform: translateY(120%);
+    transition: all .7s;
+}
+
+.layer p.movie-release-date {
+    transform: translatex(-120%);
+    transition: all .6s;
+}
+
+.layer .movie-rate-box {
+    transform: translatex(-140%);
+    transition: all .7s;
+}
+
+
+.inner:hover .layer {
+    opacity: 1;
+}
+
+.inner:hover .layer h3 {
+    transform: translateY(0);
+}
+
+.inner:hover .layer p.movie-desc {
+    transform: translateY(0);
+}
+
+.inner:hover .layer p.movie-release-date {
+    transform: translateX(0);
+}
+
+.inner:hover .layer .movie-rate-box {
+    transform: translateX(0);
+}
+
+.movie-rate-box {
+    width: 50px;
+    height: 50px;
+}
+
+
+.input-form {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+input.input-form:focus {
+    border: none !important;
+    border-bottom: 1px solid white !important;
+    color: white;
+    outline: none !important; 
+}
+
+.input-form::placeholder {
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+.inner {
+    position: relative;
+}
+
+.input-form.valid {
+    border-bottom-color: green !important;
+}
+
+.input-form.invalid {
+    border-bottom-color: red !important;
+} 
+
+.input-form.invalid::placeholder {
+    color: rgba(255, 0, 0, 0.727) !important;
+}
+
+
+.inner.invalid-name::before {
+    content: 'Please enter a valid name using letters only.';
+    position: absolute;
+    color: red;
+    top: 110%;
+}
+
+.inner.invalid-mail::before {
+    content: 'Please enter a valid email address like example@mail.com.';
+    position: absolute;
+    color: red;
+    top: 110%;
+}
+
+.inner.invalid-phone::before {
+    content: 'Please enter a valid phone number (11 digits).';
+    position: absolute;
+    color: red;
+    top: 110%;
+}
+
+.inner.invalid-age::before {
+    content: 'Please enter a valid age from 18 to 99.';
+    position: absolute;
+    color: red;
+    top: 110%;
+}
+
+.inner.invalid-password::before {
+    content: 'Please enter a strong password with at least 8 characters, including uppercase, lowercase, numbers, and a symbol.';
+    position: absolute;
+    color: red;
+    top: 110%;
+}
+
+.inner.invalid-repassword::before {
+    content: 'Passwords do not match. Please re-enter the same password.';
+    position: absolute;
+    color: red;
+    top: 110%;
+}
+
+
+.sub-btn:hover {
+    color: rgba(0, 0, 0, 0.828) !important;
+    background-color: aliceblue !important;
+    box-shadow: 0 0 15px var(--accent-hover);
+}
+
+
+button.mouse-enter-right {
+    transition: all .3s;
+    transform: translateX(180%);
+}
+
+button.mouse-enter-origin {
+    transition: all .3s;
+    transform: translateX(0);
+}
+
+
+.up-box {
+    width: 50px;
+    height: 50px;
+    bottom: 5%;
+    right: 2%;
+}
