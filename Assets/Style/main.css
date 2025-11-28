@@ -74,13 +74,6 @@ nav {
     transition: 0.3s;
 }
 
-.nav-side .links span:hover,
-.nav-side a:hover {
-    background: linear-gradient(90deg, var(--accent), var(--accent-2));
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
 .nav-side .links span,
 .nav-side a ,
 .nav-side p.copy ,
@@ -93,7 +86,7 @@ nav {
 
 .nav-side .links span:hover,
 .nav-side a:hover {
-    color: var(--accent);
+    color: #d74e39 !important;
 }
 
 .search-input {
