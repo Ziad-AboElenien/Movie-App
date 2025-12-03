@@ -17,125 +17,139 @@
 <body class="position-relative">
 
     <!-- GO TO SEARCH -->
-    <div class="position-fixed up-box z-3 bg-danger d-flex flex-column justify-content-center text-center rounded-circle ">
+    <div
+        class="position-fixed up-box z-3 bg-danger d-flex flex-column justify-content-center text-center rounded-circle ">
         <a class="" href="#search">
             <i class="fa-solid fa-arrow-up text-white fs-5"></i>
         </a>
     </div>
-    <!-- SIDE_NAV -->
-    <div class="nav-side z-3 position-fixed top-0 vh-100 w-250">
-        <div class="container d-flex flex-column justify-content-between h-100 ps-4  pb-3 pe-5">
-            <div class="links overflow-hidden pe-5 pt-5">
-                <ul class="list-unstyled fs-5 link d-flex flex-column gap-4">
-                    <li><span class="hover-red d-now">Now playing</span></li>
-                    <li><span class="hover-red d-pop">Popular</span></li>
-                    <li><span class="hover-red d-top">Top Rated</span></li>
-                    <li><span class="hover-red d-trend">Trending</span></li>
-                    <li><span class="hover-red d-up">Upcoming</span></li>
-                    <li><span class=""><a class="text-decoration-none hover-red" href="#contact">Contact
-                                Us</a></span></li>
-                </ul>
-            </div>
-            <div class="footer pb-3">
-                <ul class="mb-2 d-flex gap-2 list-unstyled">
-                    <li><i class="fa-brands fa-facebook-f"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-firefox-browser"></i></li>
-                </ul>
-                <p class="m-0 copy w-75">Copyright © 2022 All Rights Reserved. </p>
-                <a target="_blank" href="https://github.com/Ziad-AboElenien" class="undedline fs-5">Ziad Elsayed</a>
-            </div>
-        </div>
-    </div>
 
-    <!-- MAIN NAV -->
-    <nav class="position-fixed z-3 top-0 start-0 vh-100 text-center">
-        <div class="d-flex flex-column justify-content-between h-100 pt-4 pb-5">
-            <div class="nav-logo">
-                <img src="./Assets/images/logo.png" class="img-fluid w-50" alt="">
+
+
+    <div class="d-flex gap-3">
+        <div>
+            <!-- SIDE_NAV -->
+            <div class="nav-side z-3 position-fixed top-0 vh-100 w-250">
+                <div class="container d-flex flex-column justify-content-between h-100 ps-4  pb-3 pe-5">
+                    <div class="links overflow-hidden pe-5 pt-5">
+                        <ul class="list-unstyled fs-5 link d-flex flex-column gap-4">
+                            <li><span class="hover-red d-now">Now playing</span></li>
+                            <li><span class="hover-red d-pop">Popular</span></li>
+                            <li><span class="hover-red d-top">Top Rated</span></li>
+                            <li><span class="hover-red d-trend">Trending</span></li>
+                            <li><span class="hover-red d-up">Upcoming</span></li>
+                            <li><span class=""><a class="text-decoration-none hover-red" href="#contact">Contact
+                                        Us</a></span></li>
+                        </ul>
+                    </div>
+                    <div class="footer pb-3">
+                        <ul class="mb-2 d-flex gap-2 list-unstyled">
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-firefox-browser"></i></li>
+                        </ul>
+                        <p class="m-0 copy w-75">Copyright © 2022 All Rights Reserved. </p>
+                        <a target="_blank" href="https://github.com/Ziad-AboElenien" class="undedline fs-5">Ziad
+                            Elsayed</a>
+                    </div>
+                </div>
             </div>
-            <div class="nav-menu-box"><i class="fa-solid d-none exit-btn fs-5 fa-xmark"></i>
-                <i class="fa-solid fs-5 menu-btn fa-bars"></i>
-            </div>
-            <div class="nav-social d-flex flex-column gap-2 w-fit mx-auto">
-                <i class="fa-solid fa-globe"></i>
-                <i class="fa-solid fa-share-nodes"></i>
-            </div>
+
+            <!-- MAIN NAV -->
+            <nav class="position-fixed z-3 top-0 start-0 vh-100 text-center">
+                <div class="d-flex flex-column justify-content-between h-100 pt-4 pb-5">
+                    <div class="nav-logo">
+                        <img src="./Assets/images/logo.png" class="img-fluid w-50" alt="">
+                    </div>
+                    <div class="nav-menu-box"><i class="fa-solid d-none exit-btn fs-5 fa-xmark"></i>
+                        <i class="fa-solid fs-5 menu-btn fa-bars"></i>
+                    </div>
+                    <div class="nav-social d-flex flex-column gap-2 w-fit mx-auto">
+                        <i class="fa-solid fa-globe"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                </div>
+            </nav>
+            <section class="main overlay position-relative">
         </div>
-    </nav>
-    <section class="main overlay position-relative">
 
         <a href="#"></a>
 
-        <!-- HOME CONTENT -->
-        <section class="home">
-            <div class="my-container">
-                <div class="d-flex align-items-baseline justify-content-center">
-                    <div id="search" class="search flex-grow-1  mt-5">
-                        <div class="w-50 mx-auto">
-                            <input class="search-input w-100 ps-3 py-2 rounded-pill bg-transparent border border-2 "
-                            type="search" placeholder="Search...">
+        <div>
+            <!-- HOME CONTENT -->
+            <section class="home">
+                <div class="my-container">
+                    <div class="d-flex align-items-baseline justify-content-center">
+                        <div id="search" class="search flex-grow-1  mt-5">
+                            <div class="w-50 mx-auto">
+                                <input class="search-input w-100 ps-3 py-2 rounded-pill bg-transparent border border-2 "
+                                    type="search" placeholder="Search...">
+                            </div>
                         </div>
-                    </div>
-                    <div id="night-mood" class="mood-box ">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6 modd ">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-                        </svg>
-                    </div>
+                        <div id="night-mood" class="mood-box ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6 modd ">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                            </svg>
+                        </div>
 
-                </div>
-                <!-- MOVIES DISPLAY CONTAINER -->
-                <div class="row content-page mx-2 my-5 row-cols-lg-3 row-cols-md-2 gx-5 gy-4">
+                    </div>
+                    <!-- MOVIES DISPLAY CONTAINER -->
+                    <div class="row content-page mx-2 my-5 row-cols-lg-3 row-cols-md-2 gx-5 gy-4">
 
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- CONTACT -->
-        <section id="contact" class="contact py-5">
-            <div class="my-container px-4">
-                <h2 class="fs-1 py-5 ">Contact US</h2>
-                <div class="row row-cols-md-2 g-5">
-                    <div class="item">
-                        <div class="inner">
-                            <input type="text" placeholder="Enter Your Name" class="input-form  input-valid-1 w-100">
+            <!-- CONTACT -->
+            <section id="contact" class="contact py-5">
+                <div class="my-container px-4">
+                    <h2 class="fs-1 py-5 ">Contact US</h2>
+                    <div class="row row-cols-md-2 g-5">
+                        <div class="item">
+                            <div class="inner">
+                                <input type="text" placeholder="Enter Your Name"
+                                    class="input-form  input-valid-1 w-100">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner">
+                                <input type="email" placeholder="Enter Your Email"
+                                    class="input-form input-valid-2 w-100">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner">
+                                <input type="text" placeholder="Enter Your Phone"
+                                    class="input-form input-valid-3 w-100">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner">
+                                <input type="text" placeholder="Enter Your Age" class="input-form input-valid-4 w-100">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner">
+                                <input type="password" placeholder="Enter Your Password"
+                                    class="input-form input-valid-5 w-100">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="inner">
+                                <input type="password" placeholder="ReEnter Password"
+                                    class="input-form input-valid-6 w-100">
+                            </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="inner">
-                            <input type="email" placeholder="Enter Your Email" class="input-form input-valid-2 w-100">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="inner">
-                            <input type="text" placeholder="Enter Your Phone" class="input-form input-valid-3 w-100">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="inner">
-                            <input type="text" placeholder="Enter Your Age" class="input-form input-valid-4 w-100">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="inner">
-                            <input type="password" placeholder="Enter Your Password"
-                                class="input-form input-valid-5 w-100">
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="inner">
-                            <input type="password" placeholder="ReEnter Password"
-                                class="input-form input-valid-6 w-100">
-                        </div>
+                    <div class="text-center mt-4"><button type="submit"
+                            class="btn mouse-enter-origin sub-btn px-5 bg-black text-white fs-5 py-3 mt-4">Submit</button>
                     </div>
                 </div>
-                <div class="text-center mt-4"><button type="submit"
-                        class="btn mouse-enter-origin sub-btn px-5 bg-black text-white fs-5 py-3 mt-4">Submit</button>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
+    </div>
 
     </section>
 
