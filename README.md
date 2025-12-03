@@ -32,7 +32,7 @@
 * **HTML5**
 * **CSS3**
 * **JavaScript (ES6+)**
-* **[The MovieDB API](https://developers.themoviedb.org/3/movies/get-movie-details)** أو أي API مستخدم
+* **[The MovieDB API](https://developers.themoviedb.org/3/movies/get-movie-details)**
 
 ---
 
@@ -139,13 +139,13 @@ MOVIE APP
 
 ### 📱 Tablet Responsive View
 
-> شكل التطبيق على التابلت
+> شكل الويبسايت على التابلت
 > ![Tablet View](Assets/screenshots/tablet.png)
 
 
 ### 📱 Mobile Responsive View
 
-> شكل التطبيق على الموبايل
+> شكل الويبسايت على الموبايل
 > ![Mobile View](Assets/screenshots/mobile.png)
 
 
